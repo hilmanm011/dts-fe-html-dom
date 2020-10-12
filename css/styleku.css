@@ -2,3 +2,8 @@
     background-color: aqua;
     background-image: linear-gradient(to bottom right, red, yellow);
 }
+.carousel-inner img {
+    width: 100%;
+    height: 350px;
+    
+}
