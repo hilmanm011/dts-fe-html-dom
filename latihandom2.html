@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan DOM 2</title>
+</head>
+<body>
+    <p onmouseover="perbesarHuruf(this)" onmouseout="normalkanHuruf(this)"></p>
+    <button onclick="tulisPesan()">Tulis Pesan</button>
+
+    <script>
+        const tulisPesan = () => {
+            const pesan = document.getElementsByTagName('p')[0];
+            pesan.innerHTML = "Semoga Kita Sehat dan Sukses Selalu";
+            pesan.style.fontSize = "20px";
+        }
+        function perbesarHuruf(id) {
+            id.style.fontSize = "36px";
+        }
+        function normalkanHuruf(x) {
+            x.style.fontSize = "20px";
+        }
+    </script>
+</body>
+</html>
